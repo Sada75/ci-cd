@@ -3,7 +3,7 @@ name : code-check
 on:
   push:
     branches:
-      -master
+      - master
 
 jobs:
   run-check:
@@ -14,4 +14,4 @@ jobs:
         uses : actions/checkout@v4
       
       - name : run check script
-        run : ../checks/check.sh
+        run: ./checks/check.sh
