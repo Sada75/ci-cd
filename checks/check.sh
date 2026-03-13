@@ -9,7 +9,7 @@ if [ ! -f index.js ]; then
 fi
 
 # Example check 2: disallow console.log
-if grep -q "console.log" .; then
+if grep -q "console.log" index.js; then
   echo "Error: console.log is not allowed"
   exit 1
 fi
